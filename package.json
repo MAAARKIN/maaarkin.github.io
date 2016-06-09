@@ -5,7 +5,7 @@
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
     "serve": "http-server -c 1 -a localhost",
-    "css": "npm-css src/assets/css/main.css > dist/main.css",
+    "css": "npm-css assets/css/main.css > dist/main.css",
     "dev": "npm-run-all --parallel css watchify serve",
     "build": "cross-env NODE_ENV=production browserify -e src/main.js | uglifyjs -c warnings=false -m > dist/build.js",
     "lint": "eslint --ext .js,.vue src test/unit",
