@@ -1,5 +1,5 @@
 <template>
-	<div id="app" >
+	<div id="app" class="top-header">
 		<navbar></navbar>
 		<div class="container">
 			<div class="intro-header">
@@ -27,6 +27,23 @@
 </script>
 
 <style>
+	@media (max-width: 1280px) {
+		.top-header {
+			min-height: 600px;
+		}
+	}
+
+	.top-header {
+		padding: 1em 0em;
+		min-height: 650px;
+	}
+	.top-header {
+		background: url(../assets/img/officer.jpg) no-repeat;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
 	.intro-header {
 		font-family: 'Vollkorn', serif;
 		font-size: 3em;
@@ -36,5 +53,9 @@
 
 	body {
 		font-family: Helvetica, sans-serif;
+	}
+
+	p {
+		color: rgba(255, 255, 255, 0.75);
 	}
 </style>
