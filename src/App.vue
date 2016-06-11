@@ -1,17 +1,20 @@
 <template>
-	<div id="app" class="top-header">
-		<navbar></navbar>
-		<div class="container">
-			<div class="intro-header">
-				<p>
-					Hello,<br>
-					I'm Marcos Filho. <br>
-					A Full-stack Developer.<br>
-					Based in Brazil<br>
-				</p>
+	<div id="app">
+		<div class="top-header">
+			<navbar></navbar>
+			<div class="container">
+				<div class="intro-header">
+					<p>
+						Hello,<br>
+						I'm Marcos Filho. <br>
+						A Full-stack Developer.<br>
+						Based in Brazil<br>
+					</p>
 
-				<p>Under Construction.</p>
+					<p>Under Construction.</p>
+				</div>
 			</div>
+			
 		</div>
 	</div>
 </template>
@@ -29,13 +32,13 @@
 <style>
 	@media (max-width: 1280px) {
 		.top-header {
-			min-height: 600px;
+			min-height: 700px;
 		}
 	}
 
 	.top-header {
 		padding: 1em 0em;
-		min-height: 650px;
+		min-height: 750px;
 	}
 	.top-header {
 		background: url(../assets/img/officer.jpg) no-repeat;
@@ -57,5 +60,9 @@
 
 	p {
 		color: rgba(255, 255, 255, 0.75);
+	}
+
+	nav {
+		background-color: rgba(62, 54, 59, 0.36);
 	}
 </style>
