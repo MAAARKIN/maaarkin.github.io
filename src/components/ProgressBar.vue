@@ -1,20 +1,11 @@
 <template>
-	<div> 
-		<div id="{{name}}" class="progress-bar" :style="size">{{percent}}% 
-		</div> 
+	<div class="progress"> 
+		<div class="progress-bar" :style="size">{{percent}}%</div> 
 	</div>
-	<br>
-	{{ name }}
 </template>
 
 <script>
 	export default {
-		data() {
-			return {
-
-			};
-		},
-
 		computed: {
 			size: function(argument) {
 				return "width: "+this.percent+"%";
@@ -22,7 +13,6 @@
 		},
 
 		props: {
-			name: String,
 			percent: Number
 		}
 
@@ -30,6 +20,16 @@
 </script>
 
 <style lang="css" scoped>
+
+	.progress {
+		height: 20px;
+		overflow: hidden;
+		background-color: #d8d8d8;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+		box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	}
+
 	.progress-bar {
 		float: left;
 		width: 0;

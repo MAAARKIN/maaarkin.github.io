@@ -1,28 +1,55 @@
 <template>
 	<div id="app">
-		<div class="top-header">
-			<navbar></navbar>
-			<div class="container content-header">
-				<intro></intro>
+		<header>
+			<div class="top-header">
+				<navbar></navbar>
+				<div class="container content-header">
+					<intro></intro>
+				</div>
 			</div>
-		</div>
+		</header>
+		<main>
+			<div class="container">
+				
+				<div class="row" id="about">
+					<div class="col s12 m6">
 
-		<div class="row">
-			<div class="col s4" style="background-color: orange;">
-				conteudo
+						<h3>Resumo</h3>
+
+						<p align="justify">
+							Sou graduado em Sistemas de Informações, busco continuar estudando e melhorando minha área de
+							programação sempre que possível. Utilizo Java como plataforma principal de trabalho,
+							porém tenho o desenvolvimento para web como foco principal.
+						</p>
+						<p align="justify">
+							Atualmente procuro estar antenado a vários frameworks para web a fim de me manter atualizado.
+							Tenho como hobby o estudo de front-end e mobile cross-plataform.
+							Gosto de utilizar minhas horas vagas para estudar, jogar muito e curtir minha família.
+						</p>
+					</div>
+					<div class="col s12 m6">
+						<h3>Competências</h3>
+						<h6>Java</h6>
+						<progress-bar :percent=70></progress-bar>
+						<h6>Javascript</h6>
+						<progress-bar :percent=40></progress-bar>
+						<h6>HTML</h6>
+						<progress-bar :percent=50></progress-bar>
+						<h6>CSS</h6>
+						<progress-bar :percent=50></progress-bar>
+					</div>
+				</div>
 			</div>
-			<div class="col s8" style="background-color: purple;">
-				conteudo
+		</main>
+
+		<footer class="page-footer">
+			<div class="footer-copyright">
+				<div class="container">
+					Developed by Marcos Filho
+					<!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+				</div>
 			</div>
-		</div>
-
-		<!-- <div class="container"> -->
-			<!-- <blockquote>
-				<h3>What I Do?</h3>
-				<progress-bar name="marcos" :percent="60"></progress-bar>
-			</blockquote> -->
-
-		<!-- </div> -->
+		</footer>
 	</div>
 </template>
 
@@ -63,9 +90,17 @@
 		}
 	}
 
-	// .container {
-	// 	blockquote {
-	// 		border-left: 5px solid #26a69a;
-	// 	}
-	// }
+	footer.page-footer {
+		margin-top: 0px;
+		padding-top: 0px;
+		background-color: #ee6e73;
+	}
+
+	.row {
+		margin-bottom: 0px;
+	}
+
+	body {
+		background-color: #ececec;
+	}
 </style>

@@ -6,8 +6,6 @@
 			A Full-stack Developer.<br>
 			Based in Brazil<br>
 		</p>
-
-		<p>Under Construction.</p>
 	</div>
 </template>
 
