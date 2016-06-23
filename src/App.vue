@@ -45,8 +45,21 @@
 		<footer class="page-footer">
 			<div class="footer-copyright">
 				<div class="container">
-					Developed by Marcos Filho
-					<!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+					<div class="row">
+						<div class="col l5 s6">
+							Developed by Marcos Filho
+						</div>
+						<div class="col l7 s6">
+							<a href="https://linkedin.com/in/marcos-filhow" target="_blank" class="right" style="margin-right: 15px;">
+								<i class="fa fa-linkedin-square fa-3x hide-on-small-only" aria-hidden="true"></i>
+								<i class="fa fa-linkedin-square fa-2x hide-on-med-and-up" aria-hidden="true"></i>
+							</a>
+							<a href="https://github.com/MAAARKIN" target="_blank" class="right" style="margin-right: 15px;">
+								<i class="fa fa-github fa-3x hide-on-small-only" aria-hidden="true"></i>
+								<i class="fa fa-github fa-2x hide-on-med-and-up" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -91,9 +104,14 @@
 	}
 
 	footer.page-footer {
-		margin-top: 0px;
-		padding-top: 0px;
-		background-color: #ee6e73;
+		padding-bottom: 10px;
+		background-color: #2c3e50;
+	}
+
+	footer {
+		a {
+			color: #e0e0e0;
+		}
 	}
 
 	.row {
