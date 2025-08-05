@@ -1,6 +1,6 @@
 +++
 date = '2025-06-04T15:00:31-03:00'
-draft = true
+draft = false
 title = 'Princípios SOLID em Go: Roteiro de Mentoria'
 +++
 
